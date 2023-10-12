@@ -4,6 +4,28 @@ function triggerBtnClick()
     document.getElementById('btn').click();
 }
 
+
+
+
+function bienvenida() {
+  let username = window.prompt("Hola! ¿Cual es su nombre?");
+  console.log('bienvenida ' + username + "no te olvides de pasarte tambien por nuestro Discord!" );
+
+  alert(username + " Te damos la bienvenida a la Tienda de ropa Loovs");
+  let opcion = prompt("Usted acaba de ingresar a la tienda nro 1 en ropa a la moda en Cba desea comprar una nuestras remeras? Seleccione un numero \n 1: Si \n 2: Mostrar Precios Finales \n 3: Salir")
+while(opcion !=="3"){
+  if (opcion === "1"){
+    addItem()
+  }
+  if(opcion ==="2"){
+    final()
+    opcion = "3" 
+  }
+}
+
+}
+
+
 //funcion para agregar items
 function addItem() {
     item = prompt(
@@ -88,20 +110,49 @@ function addItem() {
   let envioPais = 3000;
   let provincia;
   
+//OBJETOS
+//Remera Social Club
 
+  let remeraSC = new Object();
+  remeraSC.marca = "Lovss";
+  remeraSC.talle = "M";
+  remeraSC.estilo = "Oversize";
 
-  function bienvenida() {
-    let name = prompt("Ingrese su nombre");
-    alert(name + " Te damos la bienvenida a la Tienda de ropa Loovs");
-    let opcion = prompt("Usted acaba de ingresar a la tienda nro 1 en ropa a la moda en Cba desea comprar una nuestras remeras? Seleccione un numero \n 1: Si \n 2: Mostrar Precios Finales \n 3: Salir")
-  while(opcion !=="3"){
-    if (opcion === "1"){
-      addItem()
-    }
-    if(opcion ==="2"){
-      final()
-      opcion = "3" 
-    }
-  }
-  
-  }
+  console.log(remeraSC);
+
+//Remera angel
+
+  let remeraAgl = new Object();
+  remeraAgl.marca = "Lovss";
+  remeraAgl.talle = "L";
+  remeraAgl.estilo = "Oversize";
+
+  console.log(remeraAgl);
+
+  //Remera LTDS
+
+  let remeraLTD = new Object();
+  remeraLTD.marca = "Lovss";
+  remeraLTD.talle = "XL";
+  remeraLTD.estilo = "Oversize";
+
+  console.log(remeraLTD);
+
+//Remera GALAXY
+
+let remeraGALA = new Object();
+remeraGALA.marca = "Lovss";
+remeraGALA.talle = "XXL";
+remeraGALA.estilo = "Oversize";
+
+console.log(remeraGALA);
+
+//Remera LOVSS
+
+let remeraLov = new Object();
+remeraLov.marca = "Lovss";
+remeraLov.talle = "XXXL";
+remeraLov.estilo = "Oversize";
+
+console.log(remeraLov);
+
